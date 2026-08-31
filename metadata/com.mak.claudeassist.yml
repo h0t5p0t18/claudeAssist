@@ -1,0 +1,32 @@
+Categories:
+  - Internet
+License: GPL-3.0-only
+AuthorName: MAK
+SourceCode: https://github.com/<dein-github-username>/claudeAssist
+IssueTracker: https://github.com/<dein-github-username>/claudeAssist/issues
+
+AutoName: claudeAssist
+Summary: WebView-Wrapper für claude.ai
+Description: |-
+    claudeAssist ist ein schlanker WebView-Wrapper für die claude.ai Chat-Weboberfläche.
+    Es blockiert Tracking- und Analytics-Domains, die für die Kernfunktion nicht
+    notwendig sind, und lässt Login/Chat-Funktionen ansonsten unangetastet.
+
+    Kein eigenes Tracking, keine Werbung. Für den Login und die Nutzung von claude.ai
+    selbst gelten die Bedingungen von Anthropic.
+
+RepoType: git
+Repo: https://github.com/<dein-github-username>/claudeAssist.git
+
+Builds:
+  - versionName: '1.0.0'
+    versionCode: 1
+    commit: v1.0.0
+    subdir: app
+    gradle:
+      - yes
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0.0'
+CurrentVersionCode: 1
