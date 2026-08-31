@@ -20,7 +20,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.claudeassist.app.databinding.ActivityMainBinding
+import com.mak.claudeassist.databinding.ActivityMainBinding
 import java.io.ByteArrayInputStream
 
 /**

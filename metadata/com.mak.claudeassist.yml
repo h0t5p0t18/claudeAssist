@@ -2,8 +2,8 @@ Categories:
   - Internet
 License: GPL-3.0-only
 AuthorName: MAK
-SourceCode: https://github.com/<dein-github-username>/claudeAssist
-IssueTracker: https://github.com/<dein-github-username>/claudeAssist/issues
+SourceCode: https://github.com/h0t5p0t18/claudeAssist
+IssueTracker: https://github.com/h0t5p0t18/claudeAssist/issues
 
 AutoName: claudeAssist
 Summary: WebView-Wrapper für claude.ai
@@ -16,7 +16,7 @@ Description: |-
     selbst gelten die Bedingungen von Anthropic.
 
 RepoType: git
-Repo: https://github.com/<dein-github-username>/claudeAssist.git
+Repo: https://github.com/h0t5p0t18/claudeAssist.git
 
 Builds:
   - versionName: '1.0.0'
