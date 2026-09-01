@@ -4,7 +4,6 @@
   <img src="https://img.shields.io/github/v/release/h0t5p0t18/claudeAssist" alt="current claudeAssist release" title="current claudeAssist release" />
 </a>
 
-[![Build apk](https://github.com/h0t5p0t18/claudeAssist/workflows/build.yml/badge.svg)](https://github.com/h0t5p0t18/claudeAssist/workflows/build.yml)
 
 [![Get it on Obtanium](https://img.shields.io/badge/Get%20it%20on-Obtanium-blue?logo=android)](https://github.com/h0t5p0t18/claudeAssist)
 
