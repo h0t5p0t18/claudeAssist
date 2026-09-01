@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">claudeAssist</string>
-    <string name="block_on_label">🔒 Blocking: An</string>
-    <string name="block_off_label">🔓 Blocking: Aus</string>
-    <string name="blocking_on">URL-Blocking aktiviert</string>
-    <string name="blocking_off">URL-Blocking deaktiviert</string>
-    <string name="reset_title">Sitzung zurücksetzen?</string>
-    <string name="reset_message">Dies löscht Cookies, Cache und Website-Daten und meldet dich ab.</string>
-    <string name="reset_confirm">Zurücksetzen</string>
-    <string name="cancel">Abbrechen</string>
+    <string name="block_on_label">🔒 Blocking: On</string>
+    <string name="block_off_label">🔓 Blocking: Off</string>
+    <string name="blocking_on">URL blocking enabled</string>
+    <string name="blocking_off">URL blocking disabled</string>
+    <string name="reset_title">Reset session?</string>
+    <string name="reset_message">This will delete cookies, cache, and website data and log you out.</string>
+    <string name="reset_confirm">Reset</string>
+    <string name="cancel">Cancel</string>
 </resources>

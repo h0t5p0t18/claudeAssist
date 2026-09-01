@@ -1,0 +1,3 @@
+• Added English and German localization
+• Added F-Droid metadata
+• Update licence to GPL-v3

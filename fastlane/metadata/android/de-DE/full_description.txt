@@ -1,0 +1,35 @@
+<b>claudeAssist</b> ist ein schlanker, datenschutzfreundlicher WebView-Wrapper für die öffentliche <a href="https://claude.ai">claude.ai</a>-Weboberfläche auf Android.<br><br>
+
+Die App bietet eine einfache, eigenständige APK und stellt dabei die originale Weboberfläche in den Mittelpunkt. Eine eigene API oder ein alternativer Claude-Client ist nicht enthalten.<br><br>
+
+<b>✨ Funktionen</b><br>
+
+<ul> <li>🔒 <b>URL-Blocking:</b> Standardmäßig werden Domains blockiert, die für den Betrieb von claude.ai selbst nicht erforderlich sind, darunter Drittanbieter-Tracker, Analytics- und Werbenetzwerke.</li>
+
+<li>🔄 <b>Blocking umschalten:</b> Über den Button oben rechts lässt sich das URL-Blocking ein- und ausschalten, falls dadurch eine Funktion wie beispielsweise der Google-Login beeinträchtigt wird.</li>
+
+<li>👆 <b>Button ausblenden:</b> Den Button nach oben wischen, um ihn auszublenden.</li>
+
+<li>🗑️ <b>Websitedaten zurücksetzen:</b> Den Button lange drücken, um Cookies, Cache und Websitedaten zu löschen und sich vollständig abzumelden.</li>
+
+<li>📎 <b>Datei-Uploads:</b> Dateien und Bilder in Chats hochladen.</li>
+
+<li>🎙️ <b>Mikrofon-Unterstützung:</b> Sprachfunktionen der claude.ai-Weboberfläche nutzen.</li>
+
+<li>🔐 <b>Keine Telemetrie oder Werbung:</b> Kein eigenes Tracking, keine Telemetrie und keine Werbung.</li>
+</ul>
+
+<b>🛡️ Datenschutz</b><br>
+claudeAssist ist darauf ausgelegt, den Wrapper selbst möglichst schlank zu halten. Die App fügt keine eigenen Analytics-, Werbe- oder Telemetriedienste hinzu. Das URL-Blocking ist standardmäßig aktiviert, um unnötige Verbindungen zu Drittanbieter-Domains zu reduzieren.<br><br>
+
+<b>📖 Frei und quelloffen</b><br>
+claudeAssist ist freie und quelloffene Software (FOSS).<br><br>
+
+<b>⚠️ Wichtig</b><br>
+claudeAssist ist <b>kein offizielles Produkt von Anthropic</b> und steht in keiner Verbindung zu Anthropic.<br><br>
+
+Die App ist ein WebView-Wrapper für die öffentliche claude.ai-Weboberfläche und damit konzeptionell vergleichbar mit einer Progressive Web App, die als eigenständige Android-App verpackt wurde. Login, Benutzerkonten, Inhalte und Nutzungsbedingungen werden von claude.ai bereitgestellt und unterliegen den Richtlinien von Anthropic.<br><br>
+
+Dieses Projekt ist ausschließlich für die <b>claude.ai-Chat-Weboberfläche</b> gedacht. Es handelt sich nicht um Claude Code, die Coding-CLI von Anthropic, und es wird kein dedizierter Claude-Code-Client bereitgestellt.<br><br>
+
+claudeAssist ist vom Ansatz und Stil von <a href="https://github.com/woheller69/gptAssist">gptAssist</a> und <a href="https://github.com/AcideFluorhydrique/geminiAssist">geminiAssist</a> inspiriert.

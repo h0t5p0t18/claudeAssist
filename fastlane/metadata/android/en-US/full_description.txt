@@ -1,0 +1,22 @@
+<b>claudeAssist</b> is a lightweight, privacy-friendly WebView wrapper for the public <a href="https://claude.ai">claude.ai</a> web interface on Android.<br><br>
+
+It provides a simple standalone APK while keeping the original web interface at the center. No separate API or alternative Claude client is included.<br><br>
+
+<b>✨ Features</b><br>
+
+<ul> <li>🔒 <b>URL blocking:</b> By default, domains that are not required for claude.ai itself are blocked, including third-party trackers, analytics and advertising networks.</li> <li>🔄 <b>Toggle blocking:</b> Switch URL blocking on or off using the button in the top-right corner if a feature such as Google login is affected.</li> <li>👆 <b>Hide the button:</b> Swipe the button upwards to hide it.</li> <li>🗑️ <b>Reset website data:</b> Long-press the button to clear cookies, cache and website data for a complete logout.</li> <li>📎 <b>File uploads:</b> Upload files and images to chats.</li> <li>🎙️ <b>Microphone support:</b> Use voice-related features provided by the claude.ai web interface.</li> <li>🔐 <b>No telemetry or advertising:</b> No own tracking, telemetry or advertisements.</li> </ul>
+
+<b>🛡️ Privacy</b><br>
+claudeAssist is designed to keep the wrapper itself minimal. It does not add its own analytics, advertising or telemetry services. URL blocking is enabled by default to reduce unnecessary connections to third-party domains.<br><br>
+
+<b>📖 Free and open source</b><br>
+claudeAssist is free and open-source software.<br><br>
+
+<b>⚠️ Important</b><br>
+claudeAssist is <b>not an official Anthropic product</b> and is not affiliated with Anthropic.<br><br>
+
+It is a WebView wrapper around the public claude.ai web interface, similar in concept to a Progressive Web App packaged as a standalone Android application. Login, accounts, content and terms of use are provided by claude.ai and are subject to Anthropic's policies.<br><br>
+
+This project is specifically for the <b>claude.ai chat web interface</b>. It is not Claude Code, Anthropic's coding CLI, and does not provide a dedicated Claude Code client.<br><br>
+
+claudeAssist is inspired by the approach and style of <a href="https://github.com/woheller69/gptAssist">gptAssist</a> and <a href="https://github.com/AcideFluorhydrique/geminiAssist">geminiAssist</a>.

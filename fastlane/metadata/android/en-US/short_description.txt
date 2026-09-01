@@ -1,0 +1,1 @@
+Privacy-friendly WebView wrapper for claude.ai with URL blocking and no tracking.
