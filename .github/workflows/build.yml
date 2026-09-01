@@ -1,15 +1,9 @@
-name: Build APK
+name: Build Release
 
 on:
   push:
-    branches:
-      - main
     tags:
-      - "v*"
-
-  pull_request:
-    branches:
-      - main
+      - 'v*.*.*'
 
 permissions:
   contents: write
@@ -21,76 +15,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Set up JDK 17
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "17"
+          java-version: '17'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
 
-      # ------------------------------------------------------------
-      # DEBUG BUILD
-      # ------------------------------------------------------------
-
-      - name: Build debug APK
-        if: startsWith(github.ref, 'refs/tags/') == false
-        run: ./gradlew assembleDebug
-
-      - name: Upload debug APK
-        if: startsWith(github.ref, 'refs/tags/') == false
-        uses: actions/upload-artifact@v4
-        with:
-          name: claudeAssist-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
-
-      # ------------------------------------------------------------
-      # RELEASE BUILD
-      # ------------------------------------------------------------
-
-      - name: Decode release keystore
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" \
-            | base64 --decode \
-            > "$RUNNER_TEMP/claudeAssist-release.jks"
-
-      - name: Build signed release APK
-        if: startsWith(github.ref, 'refs/tags/')
-        env:
-          KEYSTORE_PATH: ${{ runner.temp }}/claudeAssist-release.jks
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      - name: Build release APK
         run: ./gradlew assembleRelease
 
-      - name: Rename release APK
-        if: startsWith(github.ref, 'refs/tags/')
-        run: |
-          mv \
-            app/build/outputs/apk/release/app-release.apk \
-            app/build/outputs/apk/release/claudeAssist-${GITHUB_REF_NAME}.apk
-
-      # ------------------------------------------------------------
-      # GITHUB RELEASE
-      # ------------------------------------------------------------
-
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
-          files: app/build/outputs/apk/release/claudeAssist-${{ github.ref_name }}.apk
-
-      # ------------------------------------------------------------
-      # CLEANUP
-      # ------------------------------------------------------------
-
-      - name: Remove release keystore
-        if: always() && startsWith(github.ref, 'refs/tags/')
-        run: |
-          rm -f "$RUNNER_TEMP/claudeAssist-release.jks"
+          files: app/build/outputs/apk/release/app-release.apk

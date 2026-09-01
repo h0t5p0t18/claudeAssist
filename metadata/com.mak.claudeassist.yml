@@ -27,9 +27,6 @@ commit: d29682b3379de8d050e73da26a90e84735db2ea9
 subdir: app
 gradle:
 yes
-gradleprops:
-fdroidVersionName=$$VERSION$$
-fdroidVersionCode=$$VERCODE$$
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
