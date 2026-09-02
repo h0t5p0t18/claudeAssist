@@ -1,0 +1,1 @@
+fix of github actions-, local-, and f-droid-build, to work with the same build.cradle.kts
